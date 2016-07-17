@@ -12,30 +12,84 @@ SESSION 5 - Coding Basics
 
 //var is used to create variables
 //using the {} to create a variable that is type object
+//var fibber = {};
+//this is a function that can be called using fibber.init();
+//fibber.initialize = function(){
+//when i say add, you say hi
+//	fibber.add();
+	//$("#startbtn").on("click", fibber.start);
+//};
+
+//fibber.add = function() {
+	//alert("hi");
+
+//};
+//
+//fibber.start = function(){
+	//alert("Start Button Clicked...");
+//};
+
+//var fibber = {};
+//fibber.initialize = function(){
+//}
+
+
+
+//fibber.add = function(x,y){
+	//alert(x+y);
+//};
+	//fibber.add(2,3);
+	//fibber.add(5,1);
+//fibber.alert = function() {
+//};
+
+
+
+
+
 var fibber = {};
 
-
-//this is a function that can be called using fibber.init();
 fibber.initialize = function(){
 
-	$("#startbtn").on("click", fibber.start);
+	fibber.questionText = "Are we in New York?";
+	fibber.questionContext = "The ECT class";
+	fibber.isItTrue = true; 
+
+	fibber.setupStatementScreen();
+
+	fibber.viewQuestion();
 
 };
 
-fibber.start = function(){
-	alert("Start Button Clicked...");
+fibber.viewQuestion = function() {
+
+
+	$("#statement-text").text(questionText);
+	$("#statement-context").text(questionContext);
 };
 
+fibber.setupStatementScreen = function(){
 
+	$(".truth-btn").click(function(){
+		alert("YAY");
+	});
 
+		if(fibber.isTrue) == true){
+			alert("Good Work!");
+		}else{
+			alert("you stupid idiot!")
+		}
+}
+	$(".fib-btn").click(function(){
+		alert("wrong!");
 
-
-
-
-
-
-
-
+		if(fibber.isTrue) == false){
+			alert("Good Work!");
+		}else{
+			alert("you stupid idiot!")
+		}
+	});
+};
 
 /*
 
